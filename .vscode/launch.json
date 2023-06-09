@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Debug App",
+      "program": "${workspaceFolder:micro-blog-demo}/.build/debug/App",
+      "args": [],
+      "cwd": "${workspaceFolder:micro-blog-demo}",
+      "preLaunchTask": "swift: Build Debug App"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Release App",
+      "program": "${workspaceFolder:micro-blog-demo}/.build/release/App",
+      "args": [],
+      "cwd": "${workspaceFolder:micro-blog-demo}",
+      "preLaunchTask": "swift: Build Release App"
+    }
+  ]
+}
